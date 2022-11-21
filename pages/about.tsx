@@ -2,12 +2,12 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import MenuContainer from "../src/MenuContainer.js";
 
-export default function Home() {
+export default function About() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Dakota Smith Portfolio</title>
-        <meta name="description" content="Portfolio for all of my work" />
+        <title>About Me</title>
+        <meta name="description" content="All about Dakota Smith" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -22,7 +22,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to my portfolio
+          About Me
         </h1>
       </main>
 
