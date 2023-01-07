@@ -1,23 +1,44 @@
-import React, { Component } from "react";
+import { IconButton } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
+import React, { Component, useEffect, useState } from "react";
+import { grid } from "@mui/system";
 
-class Menu extends Component {
-    render() {
-        var visibility = "hide";
 
-        if (this.props.menuVisibility) {
-            visibility = "show";
+const Menu = (props) => {
+    const [visibile, setVisibile] = useState("hide");
+    
+    useEffect(() => {
+        if (props.menuVisibility) {
+            setVisibile("show");
         }
 
-        return (
-            <div id="flyoutMenu"
-                onMouseDown={this.props.handleMouseDown}
-                className={visibility}>
-                <h2><a href="/">Home</a></h2>
-                <h2><a href="/about">About</a></h2>
-                <h2><a href="/resume">Resume</a></h2>
-            </div>
-        );
-    }
+    });
+
+    return (
+        <div id="flyoutMenu"
+            onMouseDown={props.handleMouseDown}
+            className={visibile}>
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <div className="firefly" />
+            <h1><a href="/">Home</a></h1>                  
+            <h1><a href="/about">About</a></h1>
+            <h1><a href="/resume">Resume</a></h1>
+
+        </div>
+    );
 }
 
 export default Menu;

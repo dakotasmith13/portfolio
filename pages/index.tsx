@@ -17,7 +17,11 @@ export default function Home() {
             DAKOTA SMITH
           </a>
         </h1>
-        <MenuContainer class="nav" />
+        <div className='nav' style={
+          { display: 'grid' }
+        }>
+          <MenuContainer />
+        </div>
       </header>
 
       <main className={styles.main}>
