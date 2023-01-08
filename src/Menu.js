@@ -33,10 +33,11 @@ const Menu = (props) => {
             <div className="firefly" />
             <div className="firefly" />
             <div className="firefly" />
-            <h1><a href="/">Home</a></h1>                  
-            <h1><a href="/about">About</a></h1>
-            <h1><a href="/resume">Resume</a></h1>
-
+            <div className="menu-items">
+                <h1 className="grow"><a href="/" >Home</a></h1>             
+                <h1 className="grow"><a href="/about">About</a></h1>
+                <h1 className="grow"><a href="/resume">Resume</a></h1>
+            </div>
         </div>
     );
 }

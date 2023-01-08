@@ -31,6 +31,26 @@ a {
   text-align: center;
 }
 
+
+/* About Page */
+.about-layout {
+  display: grid;
+  padding-top: 5%;
+  grid-template-columns: 40% 50%;
+  grid-template-areas: "picture text";
+  width: 80%;
+}
+
+.about-picture {
+  grid-area: picture;
+}
+
+.about-text {
+  grid-area: text;
+}
+
+
+/* Menu Page */
 #flyoutMenu {
   width: 100vw;
   height: 100vh;
@@ -54,14 +74,30 @@ a {
   overflow: hidden;
 }
 
+.menu-items {
+  margin-top: 7%;
+}
+
+#flyoutMenu h1 {
+  width: 9rem;
+  margin: 2% auto;
+}
+
 #flyoutMenu h1 a {
   color: #FFFFFF;
-  margin: 5%;
   text-decoration: none;
 }
 
 #flyoutMenu h1 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; 
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.5);
 }
 
 .firefly {
