@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import MenuContainer from "../src/MenuContainer.js";
+import MenuContainer from "./MenuContainer.js";
 
 export default function Home() {
   return (
